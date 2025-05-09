@@ -2,4 +2,7 @@
     <string name="app_name">android practicum custom view</string>
     <string name="xml_screen">XML View</string>
     <string name="compose_screen">Compose</string>
+    <string name="error_many_child">В контейнер нельзя поместить более двух элементов</string>
+    <string name="first_view_text">Kotlin (Ко́тлин) — кроссплатформенный, статически типизированный, объектно-ориентированный язык программирования, работающий поверх Java Virtual Machine и разрабатываемый компанией JetBrains. Также компилируется в JavaScript и в исполняемый код ряда платформ через инфраструктуру LLVM.</string>
+    <string name="second_view_text">Авторы ставили целью создать язык более лаконичный и типобезопасный, чем Java, и более простой, чем Scala[4]. Следствием упрощения по сравнению со Scala стали также более быстрая компиляция и лучшая поддержка языка в IDE[5]. Язык полностью совместим с Java, что позволяет Java-разработчикам постепенно перейти к его использованию; в частности, язык также встраивается в Android, что позволяет для существующего Android-приложения внедрять новые функции на Kotlin без переписывания приложения целиком.</string>
 </resources>
