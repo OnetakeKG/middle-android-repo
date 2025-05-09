@@ -3,6 +3,7 @@ package com.example.androidpracticumcustomview
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import com.example.androidpracticumcustomview.ui.theme.CustomContainer
@@ -22,16 +23,18 @@ class XmlActivity : ComponentActivity() {
         }
 
         val firstView = TextView(this).apply {
-            // TODO
-            // ...
+            text = getString(R.string.first_view_text)
+            textAlignment = View.TEXT_ALIGNMENT_CENTER
+            setBackgroundColor(getColor(R.color.purple_700))
         }
+        customContainer.addView(firstView)
 
         val secondView = TextView(this).apply {
-            // TODO
-            // ...
+            text = getString(R.string.second_view_text)
+            textAlignment = View.TEXT_ALIGNMENT_CENTER
+            setBackgroundColor(getColor(R.color.teal_700))
         }
 
-        // Добавление второго элемента через некоторое время (например, по задержке)
         Handler(Looper.getMainLooper()).postDelayed({
             customContainer.addView(secondView)
         }, 2000)
